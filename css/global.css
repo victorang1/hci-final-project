@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+	text-decoration: dashed;
+}
+
+ul {
+}
+
+.clear {
+    clear: both;
+}
+
+/* ---------------- Header ---------------- */
+
+.header {
+    background-color: #161616;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 16px;
+    font-size: 36px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/* ---------------- Navigation ---------------- */
+
+.menu ul {
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+.navigation {
+	background: #383838;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    padding: 16px 20px;
+    border-right: 2px ridge #585858;
+    -webkit-transition: all .9s;
+    -moz-transition: all .9s;
+    -o-transition: all .9s;
+    -ms-transition: all .9s;
+    transition: all .9s;
+}
+
+.menu li a:hover,.menu li.active a{
+	background:#B81D22;
+}
+
+/* ---------------- Dropdown ---------------- */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a{
+	border-left: 2px ridge #585858;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* ---------------- Content ---------------- */
+
+.content {
+    background-color: #292929;
+    overflow: hidden;
+}
+
+.content h1 {
+    color: #CACACA;
+    text-align: center;
+}
+
+/* ---------------- Footer ---------------- */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #161616;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.footer-box {
+    display: flex;
+}
+
+.footer-box span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-box {
+        display: flex;
+        padding: 8px;
+        justify-content: space-evenly;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .footer-box span {
+        margin-right: 64px;
+    }
+}
