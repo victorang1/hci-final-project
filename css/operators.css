@@ -1,0 +1,34 @@
+.content-operators-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.operator-box {
+    border: 5px white solid;
+    margin: 32px;
+    background-color: black;
+}
+
+.operator-box img {
+    border-bottom: 3px white solid;
+}
+
+.operator-box .operator-name {
+    padding: 12px 0px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    #content-operators {
+        text-align: center;
+    }
+
+    .content-operators-row {
+        display: inline-block;
+    }
+}

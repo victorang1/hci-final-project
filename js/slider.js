@@ -21,5 +21,5 @@ $(function(){
 
     setInterval(function(){
             slideshow();
-        },2500);
+        },2000);
 });
