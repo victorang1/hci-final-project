@@ -1,0 +1,71 @@
+.register-form{
+    width: 80%;
+    margin: 36px auto 0 auto;
+}
+
+form div{
+	padding: 2px 0;
+}
+
+.register-form span {
+    display: block;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.register-form input[type="text"], input[type="password"],
+    input[type="password"], input[type="number"], textarea{
+    padding: 12px;
+    display: block;
+    width: 100%;
+    background: #CBCBCB;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-appearance: none;
+}
+
+.register-form input[type="checkbox"] {
+    margin-right: 16px;
+}
+
+.register-form input[type="radio"] {
+    margin-right: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.checkbox-label {
+    margin-right: 20px;
+}
+
+.register-form input[type="text"]::placeholder
+    , input[type="password"]::placeholder
+    , input[type="number"]::placeholder
+    , textarea::placeholder{
+    color: #444444
+}
+
+.register-form input[type="button"]{
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    background: #CD1F25;
+    color: #FFF;
+    text-decoration: none;
+    outline: 0;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.register-form input[type="button"]:hover {
+    background: rgb(99, 9, 12);
+}

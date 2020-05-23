@@ -4,14 +4,16 @@ body {
 }
 
 a{
-	text-decoration: dashed;
-}
-
-ul {
+	text-decoration: none;
 }
 
 .clear {
     clear: both;
+}
+
+.text-bold {
+    font-weight: bold;
+    color: yellow;
 }
 
 /* ---------------- Header ---------------- */
