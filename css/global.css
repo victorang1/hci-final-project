@@ -96,6 +96,7 @@ ul {
 .content {
     background-color: #292929;
     overflow: hidden;
+    padding-bottom: 16px;
 }
 
 .content h1 {
