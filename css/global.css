@@ -124,10 +124,16 @@ a{
     display: flex;
 }
 
-.footer-box span {
+.footer-box a {
+    color: white;
     font-weight: bold;
     font-size: 20px;
     line-height: 35px;
+}
+
+.footer-box a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 800px) {

@@ -64,9 +64,9 @@
                 </div>
                 <div>
                     <span><label>Address</label></span>
-                    <span><textarea id="alamat" rows="5" placeholder="Enter your address..."></textarea></span>
+                    <span><textarea id="address" rows="5" placeholder="Enter your address..."></textarea></span>
                     <div class="err">
-                        <label id="err-password">
+                        <label id="err-address">
                         </label>
                     </div>
                 </div>
@@ -74,28 +74,28 @@
                     <span><label>Type of game</label></span>
                     <span class="form-checkbox-group">
                         <span>
-                            <input type="checkbox" value="Rainbow Seven Siege" id="RSS">
+                            <input type="checkbox" name="checkbox" value="RSS" id="RSS">
                             <label class="checkbox-label">Rainbow Seven Siege</label>
                         </span>
                         <span>
-                            <input type="checkbox" value="Assasin's Creed" id="AC">
+                            <input type="checkbox" name="checkbox" value="AC" id="AC">
                             <label class="checkbox-label">Assasin's Creed</label>
                         </span>
                         <div>
-                            <input type="checkbox" value="Watch Dogs" id="WD">
+                            <input type="checkbox" name="checkbox" value="WD" id="WD">
                             <label class="checkbox-label">Watch Dogs</label>
                         </div>
                     </span>
                     <div class="err">
-                        <label id="err-password">
+                        <label id="err-checkbox">
                         </label>
                     </div>
                 </div>
                 <div>
                     <span><label>Number of Copies</label></span>
-                    <span><input id="numbercopies" type="number" placeholder="Input number..."></span>
+                    <span><input id="numbercopies" type="number" placeholder="Input number..." value="0" min="1" max="10"></span>
                     <div class="err">
-                        <label id="err-password">
+                        <label id="err-numbercopies">
                         </label>
                     </div>
                 </div>
@@ -104,12 +104,12 @@
                         <input type="radio" name="agreement" value="agreement" id="agreement">Terms and Service Agreement
                     </span>
                    <div class="err">
-                       <label id="err-gender">
+                       <label id="err-agreement">
                        </label>
                    </div>
                 </div>
                 <div>
-                    <input onclick="register()" type="button" value="Submit Pre-Order" class="buttonSave">
+                    <input onclick="submitPreOrder()" type="button" value="Submit Pre-Order">
                 </div>
             </form>
         </div>
@@ -121,10 +121,11 @@
             Contact Us: rainbowsevensiege@gmail.com
         </div>
         <div class="footer-box">
-            <span>Facebook</span>
-            <span>Twitter</span>
-            <span>Discord</span>
+            <span><a href="https://www.facebook.com">Facebook</a></span>
+            <span><a href="https://www.twitter.com">Twitter</a></span>
+            <span><a href="https://www.discord.com">Discord</a></span>
         </div>
     </div>
+    <script src="../js/validation.js"></script>
 </body>
 </html>

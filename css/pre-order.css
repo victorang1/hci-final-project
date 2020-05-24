@@ -69,3 +69,8 @@ form div{
 .register-form input[type="button"]:hover {
     background: rgb(99, 9, 12);
 }
+
+.err {
+    color: crimson;
+    font-weight: bold;
+}
