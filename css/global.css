@@ -28,6 +28,13 @@ a{
     font-weight: bold;
 }
 
+.header img {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-right: 20px;
+}
+
 /* ---------------- Navigation ---------------- */
 
 .menu ul {
@@ -139,6 +146,10 @@ a{
 @media only screen and (max-width: 800px) {
     .header {
         text-align: center;
+    }
+
+    .header img {
+        float: none;
     }
 
     .footer {
